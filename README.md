@@ -1,4 +1,5 @@
 # flickr-scanner
+https://travis-ci.org/jsdoodnauth/flickr-scanner.svg?branch=develop
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.5.0.
 
