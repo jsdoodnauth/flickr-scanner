@@ -11,3 +11,7 @@ before_script:
 services: mongodb
 notifications:
   slack: jsidwebsolutions:rdCC7wPHTsCCJEuLdhwVr3Pu
+deploy:
+  provider: heroku
+  app: flickr-scanner
+  api_key: "dd732d5bf18096feeb2a8bd084e3b0a27c83752a"  
