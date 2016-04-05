@@ -10,8 +10,9 @@ before_script:
   - bower install
 services: mongodb
 notifications:
-  slack: jsidwebsolutions:rdCC7wPHTsCCJEuLdhwVr3Pu
+  slack: 'jsidwebsolutions:rdCC7wPHTsCCJEuLdhwVr3Pu'
 deploy:
   provider: heroku
   app: flickr-scanner
-  api_key: "dd732d5bf18096feeb2a8bd084e3b0a27c83752a"  
+  api_key:
+    - secure: maomV33sGkepn5RpJ+A6xyY2Fi3rEfcX6xPKc/Pr2bbs87WiyBlXKo1x+dofJX/KWaeD//ew/kNaTA0KgBCL83SVvgm2zEEfIRPQuVhjxtta7NgTWDB8LcDy590gINu+8huk4xxc3T4XbB56RATuDUNVNlBQS889+iYiz33tTvyLrReOEZ1X/r05e20QzZH9JgpzcvprygZ2J8kfKWQahrKAGxen5jat58oklA0rbXPlHUCRJq2SxG4O0BRL5vORsq3dSA9TrukcxWCTFDN54JrwF2pzfaePEf50t35hqF7DuvSNyLUa84NyvgEN4xHpBmBy4gVsvoGlkmkA5aEMDLm1C2z/DQsjOo3U9zElJNhChB7r0GNfSbf5FAAZqEdmIAjuef0/DFPFP+ikWI1SSL9Px0W/HnoQBQIoCBHB3ldaQ28uoVSbGpQfcqfbuJk8limtiRmZ9voul62/rg3hpy5JD8VDeaamQrOzUCeg4qc+bf0Sn5xWUt2MJU1snY4bpcDzfGhdCoD2cZIxyXmL8rTKka7rbue8cdjcarvMYI4cqIIGHRZkmz/9ajCj3pr1n41FFIq4iai5OI3+5dm1QL+p6R6nWQZ0M18rVWgy8OC/kW06k1g3AEg0ckdCSRW3A63fcwjP/nIgXU42hge9Cm/N9/gxdxBXZfN+xta9Dxo=
