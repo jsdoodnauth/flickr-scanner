@@ -15,7 +15,7 @@ deploy:
   provider: heroku
   api_key:
     secure: cb3F0sG6v5yklSS2pMjHGU/eddZiLdcr2Ohn59IqoToqjLBmqK3aiWFNli+CbwcbYLsA8DkwHnIfeBbhhJV9JD/6ROs72CQjZ0O/XBwljZd7DRHpdiiY6mSNJ9byPgnnNaZ4//Ery+neTusz76xhBRd69l03BvnYHcuariEJKvro9lVOoqAi8nLP1nd0UszLuQwXFC9cH2UCDW40EZOzQ7TzAjksiVUJPu94JHFz+WhTIrSYdcTHyIeLp4xRQVoDsCrWuvrKa9LP4yj+UDlsfMkHGJl3AjgDolm4zvG5wnt0KymaUcVdIBfcKhfjKc4m+Gj9SkEAqadhjI2oS5vYIaUSyRAn4cIzZXZIl0+sFi6TfN0QtjcB1aReMfx3EkR+kCgNLiTzVRAAkJ7oNHD4UVY1FlTZs+2baHY80soRRbTbYKblWuMEh/sWcUQHaN+AxjouYo3FlWWmWUml2fq0doW76F/4dXm6Dcgu/GTEXh+AlVbfk4+fTwAenx6OamCjr2ADdh8m6cIPNQdOWYHVPdBk/wfJu4TWjvzIIzCQ5evqKrWszTqeRqkhBy/p8bvsVCBheTp0aKqjN8uXBN2W4rB07IHPdpWLIqCGZQ8xrSAjUyS8wU8ACLxHRQvEPUoDg4itcR/+jEKhq2+A1eBggjmKzr1jheX0uHT2zAEntDw=
-  app: flickr-scanner
+  app: ancient-gorge-64070
   on:
     repo: jsdoodnauth/flickr-scanner
     branch: develop
