@@ -1,18 +1,21 @@
 language: node_js
 node_js:
-  - 4.2.3
+- 4.2.3
 matrix:
   fast_finish: true
   allow_failures:
-    - node_js: 5.1.1
+  - node_js: 5.1.1
 before_script:
-  - npm install -g bower grunt-cli
-  - bower install
+- npm install -g bower grunt-cli
+- bower install
 services: mongodb
 notifications:
-  slack: 'jsidwebsolutions:rdCC7wPHTsCCJEuLdhwVr3Pu'
+  slack: jsidwebsolutions:rdCC7wPHTsCCJEuLdhwVr3Pu
 deploy:
   provider: heroku
-  app: flickr-scanner
   api_key:
-    - secure: maomV33sGkepn5RpJ+A6xyY2Fi3rEfcX6xPKc/Pr2bbs87WiyBlXKo1x+dofJX/KWaeD//ew/kNaTA0KgBCL83SVvgm2zEEfIRPQuVhjxtta7NgTWDB8LcDy590gINu+8huk4xxc3T4XbB56RATuDUNVNlBQS889+iYiz33tTvyLrReOEZ1X/r05e20QzZH9JgpzcvprygZ2J8kfKWQahrKAGxen5jat58oklA0rbXPlHUCRJq2SxG4O0BRL5vORsq3dSA9TrukcxWCTFDN54JrwF2pzfaePEf50t35hqF7DuvSNyLUa84NyvgEN4xHpBmBy4gVsvoGlkmkA5aEMDLm1C2z/DQsjOo3U9zElJNhChB7r0GNfSbf5FAAZqEdmIAjuef0/DFPFP+ikWI1SSL9Px0W/HnoQBQIoCBHB3ldaQ28uoVSbGpQfcqfbuJk8limtiRmZ9voul62/rg3hpy5JD8VDeaamQrOzUCeg4qc+bf0Sn5xWUt2MJU1snY4bpcDzfGhdCoD2cZIxyXmL8rTKka7rbue8cdjcarvMYI4cqIIGHRZkmz/9ajCj3pr1n41FFIq4iai5OI3+5dm1QL+p6R6nWQZ0M18rVWgy8OC/kW06k1g3AEg0ckdCSRW3A63fcwjP/nIgXU42hge9Cm/N9/gxdxBXZfN+xta9Dxo=
+    secure: cb3F0sG6v5yklSS2pMjHGU/eddZiLdcr2Ohn59IqoToqjLBmqK3aiWFNli+CbwcbYLsA8DkwHnIfeBbhhJV9JD/6ROs72CQjZ0O/XBwljZd7DRHpdiiY6mSNJ9byPgnnNaZ4//Ery+neTusz76xhBRd69l03BvnYHcuariEJKvro9lVOoqAi8nLP1nd0UszLuQwXFC9cH2UCDW40EZOzQ7TzAjksiVUJPu94JHFz+WhTIrSYdcTHyIeLp4xRQVoDsCrWuvrKa9LP4yj+UDlsfMkHGJl3AjgDolm4zvG5wnt0KymaUcVdIBfcKhfjKc4m+Gj9SkEAqadhjI2oS5vYIaUSyRAn4cIzZXZIl0+sFi6TfN0QtjcB1aReMfx3EkR+kCgNLiTzVRAAkJ7oNHD4UVY1FlTZs+2baHY80soRRbTbYKblWuMEh/sWcUQHaN+AxjouYo3FlWWmWUml2fq0doW76F/4dXm6Dcgu/GTEXh+AlVbfk4+fTwAenx6OamCjr2ADdh8m6cIPNQdOWYHVPdBk/wfJu4TWjvzIIzCQ5evqKrWszTqeRqkhBy/p8bvsVCBheTp0aKqjN8uXBN2W4rB07IHPdpWLIqCGZQ8xrSAjUyS8wU8ACLxHRQvEPUoDg4itcR/+jEKhq2+A1eBggjmKzr1jheX0uHT2zAEntDw=
+  app: flickr-scanner
+  on:
+    repo: jsdoodnauth/flickr-scanner
+    branch: develop
