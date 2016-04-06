@@ -8,6 +8,8 @@ matrix:
 before_script:
 - npm install -g bower grunt-cli
 - bower install
+after_script:
+- grunt buildcontrol:heroku 
 services: mongodb
 notifications:
   slack: jsidwebsolutions:rdCC7wPHTsCCJEuLdhwVr3Pu
